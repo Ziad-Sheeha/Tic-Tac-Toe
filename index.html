@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="icon" href="chrome tab icon.png" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <p class="neonText head">Tic-Tac-Toe</p>
+    </header>
+    <section class="game">
+      <div class="game-head">
+        <h2 class="neonText-2 turn "><span id="turn">Play!</span></h2>
+      </div>
+
+      <div class="main">
+        <div class="box" id="box1" onclick="game(this.id)"></div>
+        <div class="box" id="box2" onclick="game(this.id)"></div>
+        <div class="box" id="box3" onclick="game(this.id)"></div>
+        <div class="box" id="box4" onclick="game(this.id)"></div>
+        <div class="box" id="box5" onclick="game(this.id)"></div>
+        <div class="box" id="box6" onclick="game(this.id)"></div>
+        <div class="box" id="box7" onclick="game(this.id)"></div>
+        <div class="box" id="box8" onclick="game(this.id)"></div>
+        <div class="box" id="box9" onclick="game(this.id)"></div>
+      </div>
+      <div class="popup bounce-in-top">
+        <p><span>Oops!</span> No one won that game😝</p>
+        <button onclick="reloadPage()">Try Again!</button>
+      </div>
+    </section>
+
+    <script src="Game.js"></script>
+  </body>
+</html>
